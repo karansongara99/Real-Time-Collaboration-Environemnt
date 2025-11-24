@@ -64,9 +64,4 @@ If you want, I can also generate:
 ✅ A shorter README  
 ✅ A more advanced README with images & GIF demos  
 
-Want any of these?
 
-
-- Modular and scalable architecture  
-
----
