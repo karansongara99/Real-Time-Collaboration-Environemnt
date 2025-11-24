@@ -1,0 +1,130 @@
+/* Reset and defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Register card */
+.register-card {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Titles */
+.register-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #43cea2;
+  box-shadow: 0 0 0 3px rgba(67, 206, 162, 0.25);
+  outline: none;
+}
+
+/* Error message */
+.error-text {
+  color: #e53e3e;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Register button */
+.register-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #3bb08d, #144d87);
+  transform: translateY(-2px);
+}
+
+/* Login link */
+.login-text {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.link {
+  color: #185a9d;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #144d87;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-card {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,205 @@
+/* frontend/src/assets/styles/Dashboard.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* === CONTAINER === */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+/* === HEADER === */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: #ff5c5c;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #e04e4e;
+  transform: translateY(-2px);
+}
+
+/* === MAIN === */
+.dashboard-main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Buttons section */
+.actions {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.create-room-btn,
+.join-room-btn {
+  background: #fff;
+  color: #5a67d8;
+  border: none;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.create-room-btn:hover,
+.join-room-btn:hover {
+  transform: translateY(-3px);
+  background: #f7f7f7;
+}
+
+/* === ROOM LIST === */
+.room-list {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.room-list h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.room-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.room-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.room-item p {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+.room-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.open-btn,
+.share-btn {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  border: none;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.share-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.open-btn:hover,
+.share-btn:hover {
+  transform: scale(1.05);
+}
+
+/* === NO ROOMS === */
+.no-rooms {
+  text-align: center;
+  color: #eee;
+  padding: 1rem;
+}
+
+/* === FOOTER === */
+.dashboard-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ddd;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .create-room-btn,
+  .join-room-btn {
+    width: 100%;
+  }
+
+  .room-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .room-actions {
+    margin-top: 0.8rem;
+  }
+}
